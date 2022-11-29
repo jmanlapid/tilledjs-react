@@ -29,6 +29,8 @@ We would rather not turn off strict mode in our application.
 
 ## 2. Toggling between Card/Bank in Dialog
 
+https://user-images.githubusercontent.com/5409443/204416414-aa81cca1-a945-400c-9c12-96a1e40899a3.mp4
+
 Reproduction steps
 
 1. Click [Add Payment Button]
