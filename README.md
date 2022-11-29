@@ -23,7 +23,7 @@ Reproduction steps
 
 React strict mode is turned off in [the example you've provided](https://github.com/gettilled/tilled-example-monorepo/blob/master/react-payment-example/client/src/index.js#L9-L11). What this does is run [React useEffect hooks twice](https://reactjs.org/docs/strict-mode.html#ensuring-reusable-state) to ensure our components are cleaning up properly. The Tilled.js library does not have any cleanup functionality that we can interface with to cleanup whatever TilledJS has done to the DOM.
 
-In ./src/components/AchBankFields.tsx and ./src/components/CardFields.tsx, the React.useEffect returns a function that attempts to clean up the DOM, but is not working. When the dialog is rendered, we see duplicate form fields. What would you recommend here?
+In ./src/components/AchBankFields.tsx and ./src/components/CardFields.tsx, the React.useEffect returns a function to run any cleanup you may recommend. When the dialog is rendered, we see duplicate form fields. What would you recommend here?
 
 We would rather not turn off strict mode in our application.
 
