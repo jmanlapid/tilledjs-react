@@ -26,6 +26,8 @@ const initTilledBankFields = async () => {
     payment_method_type: 'ach_debit'
   });
 
+  await tilled.teardown();
+
   form.createField('bankAccountNumber', {
     selector: '#bank-account',
     placeholder: '1234567899'

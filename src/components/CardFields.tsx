@@ -27,6 +27,8 @@ const initTilledCardFields = async () => {
   const form = await tilled.form({
      payment_method_type: 'card'
    });
+
+   await tilled.teardown();
  
   form.createField('cardNumber', {
     selector: '#card-number',
